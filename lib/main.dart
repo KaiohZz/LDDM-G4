@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_app/game_screen.dart';
 import 'package:my_app/splash.dart';
 
 void main() {
@@ -22,7 +23,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
         useMaterial3: true,
       ),
-      home: Splash(),
+      home: const Splash(),
+      routes: {
+        '/game_screen': (context) => GameScreen(),
+      }
     );
   }
 }

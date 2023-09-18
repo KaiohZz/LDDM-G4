@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/main.dart';
-
 import 'home.dart';
 
 class Splash extends StatefulWidget {
@@ -18,7 +16,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigatetohome()async{
-    await Future.delayed(Duration(milliseconds: 2000), () {});
+    await Future.delayed(const Duration(milliseconds: 2000), () {});
      // ignore: use_build_context_synchronously
      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MyHomePage(title: 'Bit-by-Bit',)));
   }
