@@ -1,6 +1,5 @@
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
 import 'package:my_app/widgets/custom_button.dart';
-//import "package:my_app/game_screen.dart";
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -35,7 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     buttonText: 'Sobre',
                   ),
                   CustomButton(
-                    onPressed: _startGame,
+                    onPressed: () =>
+                        Navigator.pushNamed(context, '/options_screen'),
                     buttonText: 'Opções',
                   ),
                 ],
@@ -66,7 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomButton(
-                    onPressed: _startGame,
+                    onPressed: () =>
+                        Navigator.pushNamed(context, '/login_screen'),
                     buttonText: 'Login',
                   ),
                   CustomButton(

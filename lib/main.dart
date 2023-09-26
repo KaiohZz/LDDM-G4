@@ -4,6 +4,8 @@ import 'package:my_app/game_screen.dart';
 import 'package:my_app/screens/home_screen.dart';
 import 'package:my_app/screens/about_screen.dart';
 import 'package:my_app/screens/scores_screen.dart';
+import 'package:my_app/screens/login_screen.dart';
+import 'package:my_app/screens/options_screen.dart';
 // import 'package:my_app/splash.dart';
 
 void main() {
@@ -33,6 +35,8 @@ class MyApp extends StatelessWidget {
           '/game_screen': (context) => GameScreen(),
           '/about_screen': (context) => const AboutScreen(),
           '/scores_screen': (context) => const ScoresScreen(),
+          '/login_screen': (context) => const LoginScreen(),
+          '/options_screen': (context) => const OptionsScreen(),
         });
   }
 }

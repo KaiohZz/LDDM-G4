@@ -27,13 +27,67 @@ class _ScoresScreenState extends State<ScoresScreen> {
                   ),
                 ],
               ),
-              Column(
-                children: [
-                  CustomButton(
-                    onPressed: () => Navigator.pop(context),
-                    buttonText: 'Voltar',
-                  ),
-                ],
+              const Expanded(
+                child: Column(
+                  children: [
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'ABC..............................XX',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        backgroundColor: Colors.black,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Column(
                 children: [
@@ -43,6 +97,9 @@ class _ScoresScreenState extends State<ScoresScreen> {
                     width: 150.0,
                     height: 50.0,
                     borderRadius: 100.0,
+                  ),
+                  const SizedBox(
+                    height: 20.0,
                   ),
                   CustomButton(
                     onPressed: () => (),
