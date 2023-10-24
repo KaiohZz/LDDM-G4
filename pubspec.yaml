@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flame: ^1.8.2
   geolocator: ^10.0.0
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
 
 dev_dependencies:
   flutter_test:
