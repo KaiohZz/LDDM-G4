@@ -1,0 +1,38 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "stage1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "bitbybit.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "stage1.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 316.5,
+                "y": 320
+            }
+        }
+    },
+    "last.imagePath": "C:/Users/kaiok/OneDrive/Documentos/GitHub/LDDM-G4/assets/images",
+    "map.height": 10,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 20,
+    "openFiles": [
+        "bitbybit.tsx",
+        "stage1.tmx"
+    ],
+    "project": "BitByBit.tiled-project",
+    "recentFiles": [
+        "bitbybit.tsx",
+        "stage1.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}
