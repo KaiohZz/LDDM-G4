@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:my_app/game_screen.dart';
 import 'package:my_app/screens/home_screen.dart';
 import 'package:my_app/screens/about_screen.dart';
 import 'package:my_app/screens/scores_screen.dart';
@@ -32,7 +31,7 @@ class MyApp extends StatelessWidget {
           title: 'Bit-by-Bit',
         ),
         routes: {
-          '/game_screen': (context) => GameScreen(),
+          //'/game_screen': (context) => GameScreen(),
           '/about_screen': (context) => const AboutScreen(),
           '/scores_screen': (context) => const ScoresScreen(),
           '/login_screen': (context) => const LoginScreen(),

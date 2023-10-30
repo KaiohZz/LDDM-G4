@@ -1,15 +1,43 @@
 import "package:flutter/material.dart";
 import 'package:my_app/widgets/custom_button.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart';
+
 //import "package:my_app/game_screen.dart";
 
 class ScoresScreen extends StatefulWidget {
   const ScoresScreen({super.key});
-
+  
   @override
   State<ScoresScreen> createState() => _ScoresScreenState();
 }
 
 class _ScoresScreenState extends State<ScoresScreen> {
+
+  _recuperarDados() async {
+    final caminhoDB = await getDatabasesPath();
+    final localDB = join(caminhoDB, "scores.db");
+
+    var retorno = await openDatabase(
+      localDB, 
+      version: 2,
+      onCreate:(db, version) {
+        String sql = "CREATE TABLE scores ("
+                     "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                     "nome VARCHAR(20), pontos INTEGER)";
+        db.execute(sql);
+      }
+    );
+
+    print("Aberto" + retorno.isOpen.toString());
+  }
+  
+  @override
+  void initState() {
+    _recuperarDados();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
