@@ -60,36 +60,38 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Text(
-                    'Bit-by-Bit',
-                    style: TextStyle(
-                      fontSize: 96.0,
+              Expanded(child: 
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      'Bit-by-Bit',
+                      style: TextStyle(
+                        fontSize: 96.0,
+                      ),
                     ),
-                  ),
-                  /*
-                  TextField(
-                    decoration: InputDecoration(
-                      border: const OutlineInputBorder(),
-                      hintText: nome,
+                  
+                    TextField(
+                      decoration: InputDecoration(
+                        border: const OutlineInputBorder(),
+                        hintText: nome,
+                      ),
+                      controller: _textController,
                     ),
-                    controller: _textController,
-                  ),
-                  */
-                  CustomButton(
-                    onPressed: _startGame,
-                    buttonText: 'START',
-                    borderRadius: 100.0,
-                    width: 160.0,
-                    height: 160.0,
-                    buttonFontSize: 32.0,
-                  ),
-                  const Text(
-                    '(C) Todos direitos reservados',
-                  ),
-                ],
+                    
+                    CustomButton(
+                      onPressed: _startGame,
+                      buttonText: 'START',
+                      borderRadius: 100.0,
+                      width: 150.0,
+                      height: 150.0,
+                      buttonFontSize: 32.0,
+                    ),
+                    const Text(
+                      '(C) Todos direitos reservados',
+                    ),
+                  ],
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
