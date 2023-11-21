@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString("nome", nome); // a chave será usada para recuperar dados
     print("Jogo iniciado, $nome salvo");
-    //Navigator.pushNamed(context, '/game_screen');
+    Navigator.pushNamed(context, '/game_screen');
   }
   
   @override

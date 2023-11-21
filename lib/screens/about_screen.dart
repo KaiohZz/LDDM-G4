@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/widgets/custom_button.dart';
-//import "package:my_app/game_screen.dart";
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});
